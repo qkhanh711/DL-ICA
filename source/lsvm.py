@@ -49,6 +49,11 @@ __email__ = 'weissteiner@ifi.uzh.ch'
 __status__ = 'Dev'
 
 # %%
+import os
+pwd = os.getcwd()
+os.environ['stats_path'] = os.path.join(pwd, 'lib', 'sats.jar')
+os.environ['cplex_path'] = os.path.join(pwd, 'lib', 'cplex.jar')
+
 SizeBasedUniqueRandomXOR = autoclass(
     'org.spectrumauctions.sats.core.bidlang.xor.SizeBasedUniqueRandomXOR')
 JavaUtilRNGSupplier = autoclass(

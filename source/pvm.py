@@ -33,8 +33,8 @@ import random
 from tensorflow.keras.backend import clear_session
 
 # Own Modules
-from source.pysats import PySats
-from source.economies import Economies
+from pysats import PySats
+from economies import Economies
 
 __author__ = 'Jakob Weissteiner'
 __copyright__ = 'Copyright 2019, Deep Learning-powered Iterative Combinatorial Auctions: Jakob Weissteiner and Sven Seuken'
